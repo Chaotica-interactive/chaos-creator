@@ -1,0 +1,46 @@
+[gd_scene format=2]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 30.0
+rect_clip_content = true
+
+[node name="ViewportContainer" type="ViewportContainer" parent="PanelContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Viewport" type="Viewport" parent="PanelContainer/ViewportContainer"]
+size = Vector2( 100, 100 )
+
+[node name="Camera" type="Camera" parent="PanelContainer/ViewportContainer/Viewport"]
+transform = Transform( 1, 0, 0, 0, 0.934956, 0.354764, 0, -0.354764, 0.934956, 0, 1.97467, 3.48662 )
+
+[node name="Top bar" type="PanelContainer" parent="."]
+anchor_right = 1.0
+margin_bottom = 20.0
+
+[node name="MenuButton" type="MenuButton" parent="Top bar"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 1017.0
+margin_bottom = 27.0
+text = "File"
+align = 0
+items = [ "Open File", null, 0, false, false, 0, 0, null, "", false, "Save as", null, 0, false, false, 1, 0, null, "", false ]
+switch_on_hover = true
+
+[node name="MenuButton2" type="MenuButton" parent="Top bar"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 1017.0
+margin_bottom = 27.0
+focus_mode = 2
+text = "Edit"
+align = 0
+items = [ "Open File", null, 0, false, false, 0, 0, null, "", false, "Save as", null, 0, false, false, 1, 0, null, "", false ]
+switch_on_hover = true

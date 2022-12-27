@@ -11,7 +11,12 @@ config_version=4
 [application]
 
 config/name="Chaos Creator"
+run/main_scene="res://MainUI.tscn"
 config/icon="res://icon.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/wakatime/plugin.cfg" )
 
 [gui]
 

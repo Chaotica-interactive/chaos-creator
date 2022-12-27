@@ -13,3 +13,8 @@ export_presets.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+# project-specific ignores
+
+# addon i use to keep track of how long im using godot
+addons/wakatime
